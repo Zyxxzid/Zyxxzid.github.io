@@ -173,6 +173,7 @@ transition: .4s;
 
 .contant-home img{
     position: absolute;
+    display: flex;
     right: 0;
     top: 4rem;
     height: 90.7vh;
@@ -184,7 +185,7 @@ transition: .4s;
   content: "";
   position: absolute;
   top: 4.5rem;
-  right: 41.6vw; /* batas tengah antara teks dan gambar */
+  right: 43vw; /* batas tengah antara teks dan gambar */
   width: 95px;
   height: 45rem;
   z-index: 2;
@@ -206,7 +207,7 @@ transition: .4s;
   width: 100%;
   height: 15rem;
   position: absolute;
-  bottom: -1rem;
+  bottom: -8vh;
   background: linear-gradient(to bottom, transparent, #0c0c0c);
   z-index: 99;
 }
@@ -290,7 +291,7 @@ transition: .4s;
 
 .custom-shape-divider-top-1753620335 {
     position: absolute;
-    top: 97rem;
+    top: 208vh;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -424,6 +425,7 @@ transition: .4s;
         margin-top: 12rem;
         height: 100vh;
         display: flex;
+        width: 100%;
         justify-content: space-between;
         padding: 2rem;
         box-sizing: border-box;
@@ -559,8 +561,37 @@ transition: .4s;
 
 
 /* display web */
-@media only screen and (min-width: 992px && max-width: 1199px){
-   *{
-    width : 100%;
-   }
+
+/* dekstop */
+
+@media (max-width: 1400px) {
+  .navbar-element .navbar-menu a{
+    font-size: 14px;
+    margin: 0 12px 1%;
+  }
+
+  .navbar-element h1{
+    font-size: 24px;
+    margin: 12px 0 0 8px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1200px){
+    .navbar-element .navbar-menu a{
+        display: none;
+    }
+
+    .navbar-element h1{
+        display: none;
+    }
+
+    .navbar-element .logo img{
+        width: 12%;
+        margin-left: 2rem;
+    }
+
+    .navbar-element .menu-icons a{
+        display: inline-block;
+    }
 }
