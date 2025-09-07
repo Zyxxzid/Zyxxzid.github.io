@@ -619,7 +619,7 @@ transition: .4s;
  }
 
     .navbar-element .logo img{
-        width: 12%;
+        width: 50px;
         margin-left: 8px;
     }
 
@@ -720,6 +720,7 @@ transition: .4s;
         align-items: start;
         width: 90%;
         margin: auto;
+        margin-left: -1.8rem ;
     }
 
     .help .from-input button{
