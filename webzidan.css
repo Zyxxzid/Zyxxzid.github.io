@@ -296,27 +296,6 @@ transition: .4s;
     font-size: 23px;
 }
 
-.custom-shape-divider-top-1753620335 {
-    position: absolute;
-    top: 208vh;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1753620335 svg {
-    position: relative;
-    display: block;
-    width: calc(156% + 1.3px);
-    height: 129px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1753620335 .shape-fill {
-    fill: #0c0c0c;
-}
 
 
 /* contant master piece */
@@ -340,18 +319,18 @@ transition: .4s;
 }
 
 .contant-Masterpiece .continer{
-        display: flex;
-        align-items: center;
-        overflow-x: auto;
-        gap :3rem;
-        width: 100%;
-        height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap :3rem;
+    width: 100%;
+    height: 100%;
         box-sizing: border-box;
         padding: 2rem;
         box-sizing: border-box;
         scroll-snap-type: x mandatory;
     }
-
+    
     .contant-Masterpiece .continer .items{
         width: 20%;
         height: 25rem;
@@ -366,15 +345,15 @@ transition: .4s;
         border: 5px solid white;
         box-shadow: 0 0 12px burlywood;
     }
-
+    
     .continer::-webkit-scrollbar{
         display: none;
     }
-
+    
     .contant-Masterpiece .continer .items:hover{
         transform: translateY(-1rem);
     }
-
+    
     .items #id1{
         background-image: ;
         background-size: cover;
@@ -412,7 +391,7 @@ transition: .4s;
     .items #id8{
         background-image: ;
         background-size: cover;
-
+        
     }
     .items #id9{
         background-image: ;
@@ -424,8 +403,30 @@ transition: .4s;
         background-size: cover;
 
     }
-
-
+    
+    .custom-shape-divider-top-1753620335 {
+        position: absolute;
+        top: 208vh;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+        display: flex;
+    }
+    
+    .custom-shape-divider-top-1753620335 svg {
+        position: relative;
+        display: flex;
+        width: calc(156% + 1.3px);
+        height: 129px;
+        transform: rotateY(180deg);
+    }
+    
+    .custom-shape-divider-top-1753620335 .shape-fill {
+        fill: #0c0c0c;
+    }
+    
     /* help section */
     .help{
         background-color: black;
@@ -679,9 +680,11 @@ transition: .4s;
         margin: auto;
     }
 
-    .custom-shape-divider-top-1753620335{
-        top: 350%;
-    }
+    .custom-shape-divider-top-1753620335 {
+        position: relative;
+        top: 0; /* biar nempel */
+        margin-top: -12vh; /* kasih minus margin kecil biar nempel pas */
+}
 
     .contant-Masterpiece{
         height: 85vh;
@@ -715,8 +718,8 @@ transition: .4s;
     .help .from-input{
         flex-direction: column;
         align-items: start;
-        width: 50%;
-        margin-left: -2.5rem;
+        width: 90%;
+        margin: auto;
     }
 
     .help .from-input button{
@@ -727,9 +730,10 @@ transition: .4s;
         width: 85%;
     }
 
-    .help .from-input textarea{
-        width: 23.8rem;
-    }
+    .help .from-input textarea {
+    width: 100%;
+    max-width: 100%; 
+}   
 
     .help .details{
         width: 100%;
