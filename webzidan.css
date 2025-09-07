@@ -559,15 +559,8 @@ transition: .4s;
 
 
 /* display web */
-@media only screen and (max-width: 929px){
-    .navbar-menu{
-        display: none;
-    }
-    .navbar-element .menu-icons a{
-        display: block;
-    }
-
-    .contant-home .perkenalan h2{
-        font-size: 1px;
-    }
+@media only screen and (min-width: 992px && max-width: 1199px){
+   *{
+    width : 100%;
+   }
 }
