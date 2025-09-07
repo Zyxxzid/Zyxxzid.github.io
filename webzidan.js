@@ -1,18 +1,32 @@
-const logo = document.getElementById('logo');
-const popup = document.getElementById('popup');
-const closePopup = document.getElementById('close-popup');
 
-logo.addEventListener('click', () => {
-  popup.style.display = 'flex'; // tampilkan popup dengan flex (karena css popup pakai flex)
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger-menu");
+  const navMenu = document.querySelector(".navbar-menu");
+
+  hamburger.addEventListener("click", function (e) {
+    e.preventDefault();
+    navMenu.classList.toggle("show");
+  });
 });
 
-closePopup.addEventListener('click', () => {
-  popup.style.display = 'none'; // tutup popup saat klik tombol close
-});
+(function(){
+    emailjs.init({ publicKey: "4NRhOH4KVyEfNc_mN" });
+  })();
 
-// juga bisa tutup popup kalau klik di luar popup-content
-popup.addEventListener('click', (e) => {
-  if (e.target === popup) {
-    popup.style.display = 'none';
-  }
-});
+  document.getElementById('contact-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // kirim berdasarkan TEMPLATE EmailJS
+    try {
+      await emailjs.send("service_5y1lf7l", "template_wy428g7", {
+        username: e.target.username.value,
+        email: e.target.email.value,
+        pesan: e.target.pesan.value
+      });
+      alert("Pesan terkirim ✅");
+      e.target.reset();
+    } catch (err) {
+      console.error(err);
+      alert("Gagal mengirim ❌");
+    }
+  });

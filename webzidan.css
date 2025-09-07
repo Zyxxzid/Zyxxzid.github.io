@@ -23,6 +23,8 @@ body{
     scroll-behavior: smooth;
 }
 
+
+
 .navbar-element .logo{
     margin: 0;
     padding: 0;
@@ -58,6 +60,11 @@ span{
     z-index: 9999;
     position: fixed;
     width: 100%;
+}
+
+.navbar-element .navbar-menu{
+    display: flex;
+    gap: 20px;
 }
 
  .navbar-element .navbar-menu a{
@@ -562,36 +569,200 @@ transition: .4s;
 
 /* display web */
 
-/* dekstop */
+/* HP kecil */
+@media (max-width: 575px) {
 
-@media (max-width: 1400px) {
-  .navbar-element .navbar-menu a{
-    font-size: 14px;
-    margin: 0 12px 1%;
-  }
-
-  .navbar-element h1{
-    font-size: 24px;
-    margin: 12px 0 0 8px;
-    align-items: center;
-  }
+.contant-home .perkenalan{
+    padding: 0;
+    align-items: start;
+    position: relative;
+    left: 0rem;
+    top: 43vh;
 }
 
-@media (max-width: 1200px){
-    .navbar-element .navbar-menu a{
-        display: none;
-    }
+ .contant-home img{
+    display: none;
+ }
 
-    .navbar-element h1{
-        display: none;
-    }
+ .contant-home .perkenalan h2{
+    color: burlywood;
+    font-size: 3rem;
+ }
+
+  .contant-home .perkenalan h4{
+    color: white;
+  }
+
+ .contant-home .perkenalan span{
+    color: white;
+ }
+
+ .contant-home .perkenalan .social-media a{
+    font-size: 18px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    top: 1rem;
+    position: relative;
+ }
+
+ .next{
+    animation: none;
+ }
+
+ .contant-home::after{
+    display: none;
+ }
+
+ .navbar-element h1{
+    display: none;
+ }
 
     .navbar-element .logo img{
         width: 12%;
-        margin-left: 2rem;
+        margin-left: 8px;
     }
+
+    .navbar-element{
+        width: 100%;
+    }
+
+    .navbar-element .navbar-menu a{
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    .navbar-menu {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    height: 100vh;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-menu.show{
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+    .menu-icons {
+    display: block;
+    }
+
 
     .navbar-element .menu-icons a{
         display: inline-block;
     }
+
+    .contant-home{
+        background-image: url(image-zidan/gambar_samurai.jpeg) ;
+        height: 100%;
+    }
+
+    .contant-biography {
+        height: 250vh;
+    }
+    .contant-biography .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.6rem;
+        top: 15vh;
+        display: grid;
+        width: 80%;
+        margin: auto;
+    }
+
+    .custom-shape-divider-top-1753620335{
+        top: 360vh;
+    }
+
+    .contant-Masterpiece{
+        height: 80vh;
+    }
+
+    .contant-Masterpiece .h4{
+        font-size: 1rem;
+    }
+    .contant-Masterpiece h4{
+        font-size: 1.5rem;
+    
+    }
+
+    .contant-Masterpiece p{
+        font-size: 1rem;
+        width: 60%; 
+        text-align: center;
+        margin-left: 7rem;
+    }
+
+    .contant-Masterpiece .continer .items{
+        width: 40%;
+        height: 20rem;
+        padding: 2rem;
+        border-radius: 20px;
+        border: 3px solid white;
+    }
+
+    .help{
+        flex-direction: column;
+        height: 200vh;
+        margin-top: 5rem;
+    }
+
+    .help .from-input{
+        flex-direction: column;
+        align-items: start;
+        width: 70%;
+        margin-left: -2.5rem;
+    }
+
+    .help .from-input button{
+        width: 93%;
+    }
+
+    .help .from-input .help-comment{
+        width: 90%;
+    }
+
+    .help .details{
+        width: 100%;
+        height: auto;
+        margin: -5rem 40px 0 0 ;
+    }
+
+    .help .detail-container{
+        flex-direction: column;
+        position: relative;
+        
+    }
 }
+
+
+/* Tablet */
+@media (min-width: 576px) and (max-width: 991px) {
+  body {
+
+  }
+}
+
+/* Laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+
+  }
+}
+
+/* Desktop besar */
+@media (min-width: 1200px) {
+  body {
+ 
+  }
+}
+
