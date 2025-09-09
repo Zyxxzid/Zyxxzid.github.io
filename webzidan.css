@@ -335,14 +335,13 @@ transition: .4s;
         width: 20%;
         height: 25rem;
         flex-shrink: 0;
-        background: violet;
         padding: 5rem;
         border-radius: 25px;
         box-sizing: border-box;
         position: sticky;
         scroll-snap-align: center;
         transition: .4s ease-in-out;
-        border: 5px solid white;
+        border: 1px solid white;
         box-shadow: 0 0 12px burlywood;
     }
     
@@ -354,59 +353,196 @@ transition: .4s;
         transform: translateY(-1rem);
     }
     
-    .items #id1{
-        background-image: ;
+    .contant-Masterpiece #id1{
+        background-image: url(image-zidan/gambar/IMG-20250321-WA0011.jpeg) ;
         background-size: cover;
     }
-    .items #id2{
-        background-image: ;
-        background-size: cover;
-
-    }
-    .items #id3{
-        background-image: ;
+    .contant-Masterpiece #id2{
+        background-image:url(image-zidan/gambar/IMG_20250508_200354.jpg);
         background-size: cover;
 
     }
-    .items #id4{
-        background-image: ;
+    .contant-Masterpiece #id3{
+        background-image: url(image-zidan/gambar/IMG-20250322-WA0003.jpeg);
         background-size: cover;
 
     }
-    .items #id5{
-        background-image: ;
+    .contant-Masterpiece #id4{
+        background-image: url(image-zidan/gambar/IMG-20250324-WA0013.jpeg);
         background-size: cover;
 
     }
-    .items #id6{
-        background-image: ;
+    .contant-Masterpiece #id5{
+        background-image: url(image-zidan/gambar/IMG-20250504-WA0042.jpeg);
         background-size: cover;
 
     }
-    .items #id7{
-        background-image: ;
+    .contant-Masterpiece #id6{
+        background-image:url(image-zidan/gambar/IMG-20250505-WA0013.jpeg) ;
         background-size: cover;
 
     }
-    .items #id8{
-        background-image: ;
+    .contant-Masterpiece #id7{
+        background-image: url(image-zidan/gambar/IMG20250323212147.jpg);
+        background-size: cover;
+
+    }
+    .contant-Masterpiece #id8{
+        background-image: url(image-zidan/gambar/IMG20250408212750.jpg);
         background-size: cover;
         
     }
-    .items #id9{
-        background-image: ;
+    .contant-Masterpiece #id9{
+        background-image: url(image-zidan/gambar/IMG20250418203209.jpg);
         background-size: cover;
 
     }
-    .items #id10{
-        background-image: ;
+    .contant-Masterpiece #id10{
+        background-image:url(image-zidan/gambar/PXL_20241127_125816455.jpg) ;
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id11{
+        background-image: url(image-zidan/gambar/PXL_20241127_185504884.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id12{
+        background-image: url(image-zidan/gambar/PXL_20241127_214410690.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id13{
+        background-image: url(image-zidan/gambar/PXL_20241230_222052995.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id14{
+        background-image: url(image-zidan/gambar/PXL_20250217_210343463.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id15{
+        background-image: url(image-zidan/gambar/PXL_20250408_145354570.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id16{
+        background-image: url(image-zidan/gambar/PXL_20250413_090856521.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id17{
+        background-image: url(image-zidan/gambar/PXL_20250502_183737192.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id18{
+        background-image: url(image-zidan/gambar/PXL_20250502_183822236.jpg);
+        background-size: cover;
+
+    }
+
+
+    .contant-Masterpiece #id19{
+        background-image: url(image-zidan/gambar/PXL_20250512_072738937.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id20{
+        background-image:url(image-zidan/gambar/PXL_20250512_171315363.jpg) ;
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id21{
+        background-image: url(image-zidan/gambar/PXL_20250503_192743587.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id22{
+        background-image: url(image-zidan/gambar/PXL_20250504_174535435.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id23{
+        background-image: url(image-zidan/gambar/PXL_20250506_213406644.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id24{
+        background-image: url(image-zidan/gambar/PXL_20250507_194028975.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id25{
+        background-image: url(image-zidan/gambar/PXL_20250510_132405610.jpg);
+        background-size: cover;
+    }
+
+    .contant-Masterpiece #id26{
+        background-image: url(image-zidan/gambar/PXL_20250510_193725827.jpg);
+        background-size: cover;
+    }
+
+     .contant-Masterpiece #id27{
+        background-image: url(image-zidan/gambar/PXL_20250511_185016464.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id28{
+        background-image: url(image-zidan/gambar/PXL_20250512_072738937.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id29{
+        background-image: url(image-zidan/gambar/PXL_20250516_132437232.jpg) ;
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id30{
+        background-image:url(image-zidan/gambar/PXL_20250517_213142167.jpg) ;
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id31{
+        background-image: url(image-zidan/gambar/PXL_20250518_161801158.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id32{
+        background-image: url(image-zidan/gambar/PXL_20250518_161954805.jpg);
+        background-size: cover;
+
+    }
+
+    .contant-Masterpiece #id33{
+        background-image: url(image-zidan/gambar/PXL_20250524_160209451.jpg);
         background-size: cover;
 
     }
     
     .custom-shape-divider-top-1753620335 {
         position: absolute;
-        top: 208vh;
+        top: 205vh;
         left: 0;
         width: 100%;
         overflow: hidden;
@@ -606,6 +742,10 @@ transition: .4s;
     position: relative;
  }
 
+ .gradasi-pemisah{
+    height: 10rem;
+ }
+
  .next{
     animation: none;
  }
@@ -720,7 +860,7 @@ transition: .4s;
         align-items: start;
         width: 90%;
         margin: auto;
-        margin-left: -1.8rem ;
+        margin-left: 0rem ;
     }
 
     .help .from-input button{
