@@ -28,10 +28,13 @@ nav{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* background: linear-gradient(to left, #2d005233, #6802bb4d); */
+    background: linear-gradient(to left, #2d005233, #6802bb4d);
+    box-shadow: 0px 5px 15px rgba(0,0,0,.3);
+    backdrop-filter: blur(5px);
     padding: 0 2%;
     box-sizing: border-box;
     position: fixed;
+    z-index: 9999;
 }
 
 nav .Logo{
@@ -48,13 +51,150 @@ nav .navbar-menu a{
     font-size: 1.3rem;
     font-weight: 600;
     transition: .5s;
+    position: relative;
+}
+
+nav .navbar-menu a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: var(--primaryColor);
+    transition: .5s ease;
+    border-radius: 2px;
 }
 
 nav .navbar-menu a:hover{
     color: var(--hover);
 }
 
-nav .icons-menu{
+nav .navbar-menu a:hover::after{
+    width: 100%;
+}
+
+nav .icons-menu i{
     color: var(--primaryColor);
     font-size: 1.5rem;
+    transition: .4s;
+}
+
+nav .icons-menu i:hover{
+    color: var(--hover);
+    transform: scale(1.1);
+}
+
+/* home */
+main .home{
+    padding: 12vh 80px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+main .home .kata-perkenalan{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16rem;
+    margin-top: 50px;
+    width: 350px;
+    position: relative;
+    top: 5vh;
+    
+}
+
+main .home .kata-perkenalan h4{
+    color: var(--primaryColor);
+    font-size: 1.2rem;
+}
+
+main .home .kata-perkenalan .nama{
+    display: flex;
+    flex-direction: column;
+}
+
+main .home .kata-perkenalan .nama h1{
+    color: var(--textColor);
+    font-size: 4rem;
+    letter-spacing: 4px;
+}
+
+main .home .kata-perkenalan .nama h1:nth-child(2){
+    color: var(--primaryColor);
+}
+
+main .home .kata-perkenalan p{
+    color: var(--textColor);
+}
+
+main .home .foto-profil img{
+    aspect-ratio: 1/1;
+    width: 700px;
+    object-position: top;
+    object-fit: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+main .home .foto-profil::before{
+    content: '';
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background-color: var(--hover);
+    padding: 5px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+main .home .kata-perkenalan .bagian-bawah .links{
+    gap: 2rem;
+    display: flex;
+}
+
+main .home .kata-perkenalan .bagian-bawah .links i{
+    background-color: var(--primaryColor);
+    padding: 8px;
+    font-size: 1.8rem;
+    border-radius: 100%;
+    color: var(--background);
+    transition: .4s;
+}
+
+main .home .kata-perkenalan .bagian-bawah .links i:hover{
+    color: var(--textColor);
+    background-color: var(--hover);
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(0,0,0,.3);
+}
+
+main .home .profesi{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    position: relative;
+    top: 50vh;
+}
+
+main .home .profesi h1{
+    color: var(--textColor);
+    font-size: 2.4rem;
+}
+
+main .home .profesi span{
+    color: var(--primaryColor);
+}
+
+main .home .profesi h4{
+    color: var(--primaryColor);
+}
+
+main .home .profesi p{
+    color: white;
 }
