@@ -1,0 +1,60 @@
+
+
+:root{
+    --background: #0D0B1E;
+    --primaryColor: #7F00FF;
+    --secondaryColor: #00FFFF;
+    --textColor: #E6E6FA;
+    --hover: #9400FF;
+}
+
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* background: linear-gradient(to left, #2d005233, #6802bb4d); */
+    padding: 0 2%;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+nav .Logo{
+    width: 80px;
+}
+
+nav .navbar-menu{
+    display: flex;
+    gap: 2rem;
+}
+
+nav .navbar-menu a{
+    color: var(--textColor);
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: .5s;
+}
+
+nav .navbar-menu a:hover{
+    color: var(--hover);
+}
+
+nav .icons-menu{
+    color: var(--primaryColor);
+    font-size: 1.5rem;
+}
