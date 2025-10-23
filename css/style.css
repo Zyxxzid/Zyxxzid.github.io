@@ -20,7 +20,8 @@
 
 body{
     background-color: var(--background);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+    overflow-x: hidden;
 }
 
 nav{
@@ -90,8 +91,17 @@ nav .icons-menu i:hover{
 main .home{
     padding: 12vh 80px 0 80px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main .home .home-contant{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
 }
 
 main .home .kata-perkenalan{
@@ -104,6 +114,10 @@ main .home .kata-perkenalan{
     position: relative;
     top: 5vh;
     
+}
+
+main .home .kata-perkenalan .bagian-atas{
+    animation: masukKanan 2s ease-in-out;
 }
 
 main .home .kata-perkenalan h4{
@@ -130,6 +144,11 @@ main .home .kata-perkenalan p{
     color: var(--textColor);
 }
 
+main .home .foto-profil{
+    margin: 0 auto;
+    width: 800px;
+}
+
 main .home .foto-profil img{
     aspect-ratio: 1/1;
     width: 700px;
@@ -137,6 +156,12 @@ main .home .foto-profil img{
     object-fit: cover;
     position: relative;
     margin: 0 auto;
+    z-index: 99;
+    left: 18px;
+    filter: drop-shadow(0px 5px 15px rgba(0,0,0,.4));
+    animation: kebawah linear both;
+    animation-timeline: view();
+    box-sizing:border-box;
 }
 
 main .home .foto-profil::before{
@@ -151,6 +176,8 @@ main .home .foto-profil::before{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
+    animation: opacity 4s ease;
+    z-index: 9;
 }
 
 main .home .kata-perkenalan .bagian-bawah .links{
@@ -165,6 +192,19 @@ main .home .kata-perkenalan .bagian-bawah .links i{
     border-radius: 100%;
     color: var(--background);
     transition: .4s;
+    opacity: 0;
+}
+
+main .home .kata-perkenalan .bagian-bawah .links i:nth-child(1){
+    animation: tombol 1s ease 2s forwards;
+}
+
+main .home .kata-perkenalan .bagian-bawah .links i:nth-child(2){
+    animation: tombol 1s ease 2.5s forwards;
+}
+
+main .home .kata-perkenalan .bagian-bawah .links i:nth-child(3){
+    animation: tombol 1s ease 3s forwards;
 }
 
 main .home .kata-perkenalan .bagian-bawah .links i:hover{
@@ -180,6 +220,7 @@ main .home .profesi{
     width: 400px;
     position: relative;
     top: 50vh;
+    animation: masukKiri 2s ease-in-out;
 }
 
 main .home .profesi h1{
@@ -197,4 +238,136 @@ main .home .profesi h4{
 
 main .home .profesi p{
     color: white;
+    margin-top: .3rem;
+}
+
+
+main .home-skill {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+main .home .home-skill .container-skill{
+    display: flex;
+    gap: 20px;
+    border: 2px solid var(--hover);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 4vw;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    animation: muter 8s linear infinite;
+}
+
+main .home .home-skill .container-skill i{
+    color: var(--background);
+    background-color: var(--primaryColor);
+    padding: 8px 10px;
+    border-radius: 100%;
+    font-size: 2.5rem;
+    position: absolute;
+}
+
+main .home .home-skill .container-skill i:nth-child(1){
+    transform: rotate(0deg) translate(250px) rotate(0deg);
+}
+
+main .home .home-skill .container-skill i:nth-child(2){
+    transform: rotate(72deg) translate(250px) rotate(-72deg);
+}
+
+main .home .home-skill .container-skill i:nth-child(3){
+    transform: rotate(144deg) translate(250px) rotate(-144deg);
+}
+
+main .home .home-skill .container-skill i:nth-child(4){
+    transform: rotate(216deg) translate(250px) rotate(-216deg);
+}
+
+main .home .home-skill .container-skill i:nth-child(5){
+    transform: rotate(288deg) translate(250px) rotate(-288deg); 
+}
+
+
+
+
+
+
+
+
+
+/* animation */
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes masukKanan {
+    0%{
+        transform: translateX(8rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes masukKiri {
+    0%{
+        transform: translateX(-8rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tombol {
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    70%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes kebawah {
+    0%{
+        transform: translateY(-80vh) scale(1);
+    }
+
+    20%{
+        transform:  translateY(-40vh) scale(1);
+    }
+
+    100%{
+        transform: translateY(100vh) scale(.5);
+    }
+}
+
+@keyframes muter {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
