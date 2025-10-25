@@ -250,6 +250,47 @@ main .home-skill {
     align-items: center;
 }
 
+main .home-skill .desc-skill-kiri-continer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 300px;
+    font-size: .8rem;
+}
+
+main .home-skill .desc-skill-kiri-continer .card-skill{
+    display:flex;
+    flex-direction:column;
+    gap: 1.2rem;
+}
+
+main .home-skill .desc-skill-kiri-continer .card-skill h1{
+    color: var(--primaryColor);
+}
+
+main .home-skill .desc-skill-kiri-continer
+
+main .home-skill .desc-skill-kiri-continer .card-skill li{
+    color: var(--textColor);
+}
+
+main .home-skill .desc-skill-kanan{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 300px;
+    font-size: .8rem;
+}
+
+main .home-skill .desc-skill-kanan .card-skill h1{
+    color: var(--primaryColor);
+}
+
+main .home-skill .desc-skill-kanan .card-skill li{
+    color: var(--textColor);
+    text-decoration-color: var(--hover);
+}
+
 
 main .home .home-skill .container-skill{
     display: flex;
@@ -258,7 +299,6 @@ main .home .home-skill .container-skill{
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-right: 4vw;
     width: 500px;
     height: 500px;
     border-radius: 100%;
