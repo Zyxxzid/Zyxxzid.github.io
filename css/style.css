@@ -312,6 +312,11 @@ main .home-skill .desc-skill-kanan .card-skill:nth-child(2){
     animation-timeline: view() ;
 }
 
+main .home-skill .desc-skill-kanan .card-skill:nth-child(3){
+    animation: masukKananSkill ease forwards;
+    animation-timeline: view() ;
+}
+
 main .home-skill .desc-skill-kanan .card-skill h1{
     color: var(--primaryColor);
 }
@@ -397,24 +402,22 @@ main .home .project .container-project .card-project{
     opacity: 0;
 }  
 
-main .home .project .container-project .card-project:nth-child(1){
-    animation: keAtas ease forwards;
-    animation-timeline: view() ;
-}
-main .home .project .container-project .card-project:nth-child(2){
-    animation: keAtas ease forwards;
-    animation-timeline: view() ;
-}
-main .home .project .container-project .card-project:nth-child(3){
-    animation: keAtas ease forwards;
-    animation-timeline: view() ;
-}
-main .home .project .container-project .card-project:nth-child(4){
-    animation: keAtas ease forwards;
-    animation-timeline: view() ;
+main .home .project .container-project .card-project.active{
+    animation: keAtas .5s ease forwards;
 }
 
-main .home .project .container-project .card-project:hover{
+main .home .project .container-project .card-project.active:nth-child(2){
+    animation-delay: .2s ;
+}
+main .home .project .container-project .card-project.active:nth-child(3){
+    animation-delay: .4s ;
+}
+main .home .project .container-project .card-project.active:nth-child(4){
+    animation-delay: .6s ;
+
+}
+
+main .home .project .container-project .card-project.active:hover{
     border: 1px solid var(--hover);
     box-shadow: 0px 3px 15px var(--hover);
     transform: scale(1.04);
@@ -436,7 +439,7 @@ main .home .project .container-project .card-project .informasi{
     height: 100%;
     background-color: #0d0b1eb0;
     z-index: -1;
-    top: 12rem;
+    top: 20rem;
     transition: .5s;
 }
 
@@ -603,13 +606,14 @@ main .home .project .container-project .card-project img {
 
 @keyframes keAtas {
     0%{
-        transform: translateY(12rem) scale(.1);
+        transform: scale(.8);
         opacity: 0;
     }
 
-    20%,100%{
-        transform: translateY(0) scale(1);
+    100%{
+        transform:scale(1);
         opacity: 1;
     }
+
 }
 
