@@ -364,6 +364,78 @@ main .home .home-skill .container-skill i:nth-child(5){
     transform: rotate(288deg) translate(250px) rotate(-288deg); 
 }
 
+main .home .project{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .home .project .container-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    position: relative;
+    box-sizing: border-box;
+}
+
+main .home .project .container-project .card-project{
+    display: flex;
+    box-shadow: 0px 5px 15px var(--primaryColor);
+    position: relative;
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid var(--primaryColor);
+}   
+
+main .home .project .container-project .card-project:hover img{
+    transform: scale(1.1);
+}
+
+main .home .project .container-project .card-project .informasi{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    background-color: #0d0b1eb0;
+}
+
+main .home .project .container-project .card-project .informasi h3{
+    color: var(--primaryColor);
+    font-size: 1.8rem;
+}
+
+main .home .project .container-project .card-project .informasi p{
+    color: var(--textColor);
+    width: 300px;
+    text-align: center;
+}
+
+main .home .project .container-project .card-project .informasi a{
+    background-color: var(--primaryColor);
+    color: var(--textColor);
+    padding: 8px 10px;
+    font-weight: 600;
+    border-radius: 12px;
+}
+
+main .home .project .container-project .card-project img {
+    width: 550px;
+    aspect-ratio: 2/1;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: .3s;
+}
 
 
 
