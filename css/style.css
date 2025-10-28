@@ -158,10 +158,11 @@ main .home .foto-profil img{
     margin: 0 auto;
     z-index: 99;
     left: 18px;
-    filter: drop-shadow(0px 5px 15px rgba(0,0,0,.4));
+    filter: drop-shadow(0px 5px 15px rgba(0,0,0,.8));
     animation: kebawah linear both;
     animation-timeline: view();
     box-sizing:border-box;
+
 }
 
 main .home .foto-profil::before{
@@ -407,13 +408,13 @@ main .home .project .container-project .card-project.active{
 }
 
 main .home .project .container-project .card-project.active:nth-child(2){
-    animation-delay: .2s ;
+    animation-delay: .1s ;
 }
 main .home .project .container-project .card-project.active:nth-child(3){
-    animation-delay: .4s ;
+    animation-delay: .2s ;
 }
 main .home .project .container-project .card-project.active:nth-child(4){
-    animation-delay: .6s ;
+    animation-delay: .3s ;
 
 }
 
@@ -505,6 +506,153 @@ main .home .project .container-project .card-project img {
     transition: .3s;
 }
 
+main .home .about-me{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .home .about-me .container-about{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 0%;
+    gap: 5rem;
+}
+
+main .home .about-me .container-about .about-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    color: var(--textColor);
+}
+
+main .home .about-me .container-about .about-card .box1{
+    background-color: rgba(43, 0, 73, 0.555);
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+main .home .about-me .container-about .about-card .box1.active{
+    animation: Glowing 1s ease;
+}
+
+main .home .about-me .container-about .about-card .box2.active{
+    animation: Glowing 1.1s ease;
+}
+
+
+main .home .about-me .container-about .about-card .box1 h2{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+main .home .about-me .container-about .about-card .box1 span{
+    color: var(--primaryColor);
+}
+
+main .home .about-me .container-about .about-card .box1 h4{
+    margin-bottom: 5px;
+    color: var(--primaryColor);
+    font-size: 1.2rem;
+}
+
+main .home .about-me .container-about .about-card .box1 p{ 
+    width: 600px;
+}
+
+main .home .about-me .container-about .about-card .box1 h4 span{
+    color: var(--textColor);
+}
+
+main .home .about-me .container-about .about-card .box2{
+    background-color: rgba(43, 0, 73, 0.555);
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 20px;
+    gap: 1rem;
+}
+
+main .home .about-me .container-about .about-card .box2 h2{
+    color: var(--primaryColor);
+    font-size: 2rem;
+}
+
+main .home .about-me .container-about .about-card .box2 ul{
+    padding-left: 15px;
+}
+
+main .home .about-me .container-about .about-card:nth-child(2){
+    background-color: rgba(43, 0, 73, 0.555);
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 0 10px rgba(43, 0, 73, 0.555);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+main .home .about-me .container-about .about-card:nth-child(2) h2{
+    color: var(--primaryColor);
+    font-size: 2rem;
+}
+
+main .home .about-me .container-about .about-card:nth-child(2) p{
+    font-size: 1.5rem;
+    padding:  0 2%;
+}
+
+main .home .about-me .container-about .about-card:nth-child(2) .btn{
+    background-color: var(--primaryColor);
+    padding: 8px 5px;
+    border-radius: 15px ;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,.4);
+    text-align: center;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+}
+
+main .home .about-me .container-about .about-card:nth-child(2) .btn:hover{
+    transition: .3s;
+    gap: .5rem;
+    transform: scale(1.04);
+}
+
+main .home .about-me .container-about .about-card:nth-child(2) .btn a{
+    color: var(--textColor);
+}
+
+main .home .about-me .container-about .about-card:nth-child(2) .btn i{
+    display: none;
+    align-items: center;
+    transform: translateX(-15px);
+    transition: 1s;
+}
+
+main .home .about-me .container-about .about-card:nth-child(2) .btn:hover i{
+    display: flex;
+    transform: translateX(0);
+}
+
+
+
+
+
+
 
 
 
@@ -568,8 +716,21 @@ main .home .project .container-project .card-project img {
         transform:  translateY(-40vh) scale(1);
     }
 
+    /* 50%{
+        opacity: 1;
+    }
+    53%{
+        opacity: 0;
+    }
+
+    98%{
+        opacity: 0;
+    } */
+
+
     100%{
         transform: translateY(100vh) scale(.5);
+        opacity : 1;
     }
 }
 
@@ -617,3 +778,21 @@ main .home .project .container-project .card-project img {
 
 }
 
+
+@keyframes Glowing {
+    0%{
+        transform: scale(.9);
+        opacity: 0;
+    }
+
+    50%{
+        transform: scale(1.06);
+        opacity: 1;
+    }
+    
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
