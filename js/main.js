@@ -17,13 +17,13 @@ window.addEventListener('scroll', function() {
 })
 
 window.addEventListener('scroll', function() {
-    const revaeal = document.querySelectorAll('.about-card .box')
+    const revaeal = document.querySelectorAll('.box')
     for (let i = 0; i< revaeal.length; i++) {
         let window1 = window.innerHeight
         let revealTop = revaeal[i].getBoundingClientRect().top
         let revealPoint = revaeal[i].offsetHeight;
         
-        let layar = revealPoint * 0.1
+        let layar = revealPoint * 0.5
 
         if (revealTop < window1 - layar) {
             revaeal[i].classList.add('active')
