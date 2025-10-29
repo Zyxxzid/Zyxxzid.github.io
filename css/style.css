@@ -628,7 +628,10 @@ main .home .about-me .container-about .about-card:nth-child(2){
     flex-direction: column;
     box-shadow: 0px 5px 15px rgba(0,0,0,.4);
     transition: .4s;
+}
 
+main .home .about-me .container-about .about-card:nth-child(2).active{
+    animation: opacity 2s ease;
 }
 
 main .home .about-me .container-about .about-card:nth-child(2):hover{
@@ -715,16 +718,48 @@ main .home .contact-me{
     width: 100%;
     box-sizing: border-box;
     height: 90vh;
+    padding: 18px;
+    gap: 5rem;
 }
 
 main .home .contact-me .kata-pengantar{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
+    width: 400px;
 }
 
 main .home .contact-me .kata-pengantar h1{
-    
+    color: var(--textColor);
+    font-size: 2.4rem;
+}
+
+main .home .contact-me .kata-pengantar p{
+    color: #a1a1a1;
+}
+
+main .home .contact-me .kata-pengantar .link-email{
+    position: relative;
+    top: 18vh;
+}
+
+main .home .contact-me .kata-pengantar .link-email a{
+    color: var(--primaryColor);
+    font-weight: 600;
+    margin-right: .5rem;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+main .home .contact-me .kata-pengantar .link-email i{
+    color: var(--primaryColor);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+main .home .contact-me .kata-pengantar .link-email a:hover{
+    text-decoration: underline;
+    margin-right:1rem;
 }
 
 
