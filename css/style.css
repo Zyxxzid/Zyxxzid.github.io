@@ -19,7 +19,7 @@
 body {
     background-color: var(--background);
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 nav {
@@ -98,6 +98,7 @@ main .home {
 main .home .home-contant {
     display: flex;
     justify-content: space-between;
+    gap: 5rem;
     width: 100%;
     height: 100vh;
 }
@@ -108,7 +109,7 @@ main .home .kata-perkenalan {
     justify-content: start;
     gap: 16rem;
     margin-top: 50px;
-    width: 350px;
+    width: 20%;
     position: relative;
     top: 5vh;
 
@@ -153,9 +154,8 @@ main .home .foto-profil img {
     object-position: top;
     object-fit: cover;
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto;    
     z-index: 99;
-    left: 18px;
     filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, .8));
     animation: kebawah linear both;
     animation-timeline: view();
@@ -218,6 +218,7 @@ main .home .profesi {
     flex-direction: column;
     width: 400px;
     position: relative;
+    right: 0;
     top: 50vh;
     animation: masukKiri 2s ease-in-out;
 }
@@ -976,4 +977,91 @@ main .home .contact-me .bagian-form form textarea {
         opacity: 1;
     }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* media/ ukuran layar  */
+
+/* dekstop */
+@media (min-width: 1200px) {
+  main .home-contant .foto-profil img{
+    position: relative;
+    left: -8px;
+  }
+}
+
+
+/* laptop */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  
+  main .home .home-contant {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  main .home .foto-profil img {
+    width: 500px;
+    position: relative;
+  }
+
+  main .home .foto-profil::before{
+    height: 400px;
+    width: 400px;
+  }
+
+  main .home .kata-perkenalan .nama h1 {
+    font-size: 2.4rem;
+  }
+
+  main .home .kata-perkenalan p{
+    font-size: .7rem;
+  }
+
+  main .home .kata-perkenalan{
+    position: relative;
+    top: 6rem;
+
+  }
+
+  main .home .kata-perkenalan h4{
+    font-size: 1rem;
+  }
+
+  main .home .profesi h1{
+    font-size: 2rem;
+  }
+
+    main .home .profesi p{
+        font-size: .8rem;
+    }
+
+}
+
+
+/* teblet */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-color: #fff1b8;
+  }
+  .container {
+    width: 720px;
+  }
+}
+
+
+/* android */
+@media (max-width: 768px) {
+  body {
+    background-color: #fff119;
+  }
 }
