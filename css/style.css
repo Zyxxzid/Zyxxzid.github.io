@@ -1,6 +1,4 @@
-
-
-:root{
+:root {
     --background: #0D0B1E;
     --primaryColor: #7F00FF;
     --secondaryColor: #00FFFF;
@@ -8,29 +6,29 @@
     --hover: #9400FF;
 }
 
-*{
+* {
     text-decoration: none;
     padding: 0;
     margin: 0;
 }
 
-*::-webkit-scrollbar{
+*::-webkit-scrollbar {
     display: none;
 }
 
-body{
+body {
     background-color: var(--background);
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     background: linear-gradient(to left, #2d005233, #6802bb4d);
-    box-shadow: 0px 5px 15px rgba(0,0,0,.3);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
     backdrop-filter: blur(5px);
     padding: 0 2%;
     box-sizing: border-box;
@@ -38,16 +36,16 @@ nav{
     z-index: 9999;
 }
 
-nav .Logo{
+nav .Logo {
     width: 80px;
 }
 
-nav .navbar-menu{
+nav .navbar-menu {
     display: flex;
     gap: 2rem;
 }
 
-nav .navbar-menu a{
+nav .navbar-menu a {
     color: var(--textColor);
     font-size: 1.3rem;
     font-weight: 600;
@@ -55,7 +53,7 @@ nav .navbar-menu a{
     position: relative;
 }
 
-nav .navbar-menu a::after{
+nav .navbar-menu a::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -68,27 +66,27 @@ nav .navbar-menu a::after{
     border-radius: 2px;
 }
 
-nav .navbar-menu a:hover{
+nav .navbar-menu a:hover {
     color: var(--hover);
 }
 
-nav .navbar-menu a:hover::after{
+nav .navbar-menu a:hover::after {
     width: 100%;
 }
 
-nav .icons-menu i{
+nav .icons-menu i {
     color: var(--primaryColor);
     font-size: 1.5rem;
     transition: .4s;
 }
 
-nav .icons-menu i:hover{
+nav .icons-menu i:hover {
     color: var(--hover);
     transform: scale(1.1);
 }
 
 /* home */
-main .home{
+main .home {
     padding: 12vh 80px 0 80px;
     display: flex;
     flex-direction: column;
@@ -97,14 +95,14 @@ main .home{
     box-sizing: border-box;
 }
 
-main .home .home-contant{
+main .home .home-contant {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 100vh;
 }
 
-main .home .kata-perkenalan{
+main .home .kata-perkenalan {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -113,43 +111,43 @@ main .home .kata-perkenalan{
     width: 350px;
     position: relative;
     top: 5vh;
-    
+
 }
 
-main .home .kata-perkenalan .bagian-atas{
+main .home .kata-perkenalan .bagian-atas {
     animation: masukKanan 2s ease-in-out;
 }
 
-main .home .kata-perkenalan h4{
+main .home .kata-perkenalan h4 {
     color: var(--primaryColor);
     font-size: 1.2rem;
 }
 
-main .home .kata-perkenalan .nama{
+main .home .kata-perkenalan .nama {
     display: flex;
     flex-direction: column;
 }
 
-main .home .kata-perkenalan .nama h1{
+main .home .kata-perkenalan .nama h1 {
     color: var(--textColor);
     font-size: 4rem;
     letter-spacing: 4px;
 }
 
-main .home .kata-perkenalan .nama h1:nth-child(2){
+main .home .kata-perkenalan .nama h1:nth-child(2) {
     color: var(--primaryColor);
 }
 
-main .home .kata-perkenalan p{
+main .home .kata-perkenalan p {
     color: var(--textColor);
 }
 
-main .home .foto-profil{
+main .home .foto-profil {
     margin: 0 auto;
     width: 800px;
 }
 
-main .home .foto-profil img{
+main .home .foto-profil img {
     aspect-ratio: 1/1;
     width: 700px;
     object-position: top;
@@ -158,14 +156,14 @@ main .home .foto-profil img{
     margin: 0 auto;
     z-index: 99;
     left: 18px;
-    filter: drop-shadow(0px 5px 15px rgba(0,0,0,.8));
+    filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, .8));
     animation: kebawah linear both;
     animation-timeline: view();
-    box-sizing:border-box;
+    box-sizing: border-box;
 
 }
 
-main .home .foto-profil::before{
+main .home .foto-profil::before {
     content: '';
     width: 500px;
     height: 500px;
@@ -173,7 +171,7 @@ main .home .foto-profil::before{
     background-color: var(--hover);
     padding: 5px;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -181,12 +179,12 @@ main .home .foto-profil::before{
     z-index: 9;
 }
 
-main .home .kata-perkenalan .bagian-bawah .links{
+main .home .kata-perkenalan .bagian-bawah .links {
     gap: 2rem;
     display: flex;
 }
 
-main .home .kata-perkenalan .bagian-bawah .links i{
+main .home .kata-perkenalan .bagian-bawah .links i {
     background-color: var(--primaryColor);
     padding: 8px;
     font-size: 1.8rem;
@@ -196,26 +194,26 @@ main .home .kata-perkenalan .bagian-bawah .links i{
     opacity: 0;
 }
 
-main .home .kata-perkenalan .bagian-bawah .links i:nth-child(1){
+main .home .kata-perkenalan .bagian-bawah .links i:nth-child(1) {
     animation: tombol 1s ease 2s forwards;
 }
 
-main .home .kata-perkenalan .bagian-bawah .links i:nth-child(2){
+main .home .kata-perkenalan .bagian-bawah .links i:nth-child(2) {
     animation: tombol 1s ease 2.5s forwards;
 }
 
-main .home .kata-perkenalan .bagian-bawah .links i:nth-child(3){
+main .home .kata-perkenalan .bagian-bawah .links i:nth-child(3) {
     animation: tombol 1s ease 3s forwards;
 }
 
-main .home .kata-perkenalan .bagian-bawah .links i:hover{
+main .home .kata-perkenalan .bagian-bawah .links i:hover {
     color: var(--textColor);
     background-color: var(--hover);
     transform: scale(1.1);
-    box-shadow: 0px 5px 15px rgba(0,0,0,.3);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
 }
 
-main .home .profesi{
+main .home .profesi {
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -224,20 +222,20 @@ main .home .profesi{
     animation: masukKiri 2s ease-in-out;
 }
 
-main .home .profesi h1{
+main .home .profesi h1 {
     color: var(--textColor);
     font-size: 2.4rem;
 }
 
-main .home .profesi span{
+main .home .profesi span {
     color: var(--primaryColor);
 }
 
-main .home .profesi h4{
+main .home .profesi h4 {
     color: var(--primaryColor);
 }
 
-main .home .profesi p{
+main .home .profesi p {
     color: white;
     margin-top: .3rem;
 }
@@ -251,7 +249,7 @@ main .home-skill {
     align-items: center;
 }
 
-main .home-skill .desc-skill-kiri-continer{
+main .home-skill .desc-skill-kiri-continer {
     display: flex;
     flex-direction: column;
     gap: 2.3rem;
@@ -259,37 +257,37 @@ main .home-skill .desc-skill-kiri-continer{
     font-size: .8rem;
 }
 
-main .home-skill .desc-skill-kiri-continer .card-skill{
-    display:flex;
-    flex-direction:column;
+main .home-skill .desc-skill-kiri-continer .card-skill {
+    display: flex;
+    flex-direction: column;
     gap: 1.2rem;
     opacity: 0;
 }
 
-main .home-skill .desc-skill-kiri-continer .card-skill:nth-child(1){
+main .home-skill .desc-skill-kiri-continer .card-skill:nth-child(1) {
     animation: masukKiriSkill ease forwards;
     animation-timeline: view();
 }
 
-main .home-skill .desc-skill-kiri-continer .card-skill:nth-child(2){
-    animation: masukKiriSkill  ease forwards;
-    animation-timeline: view();
-}
-
-main .home-skill .desc-skill-kiri-continer .card-skill:nth-child(3){
+main .home-skill .desc-skill-kiri-continer .card-skill:nth-child(2) {
     animation: masukKiriSkill ease forwards;
     animation-timeline: view();
 }
 
-main .home-skill .desc-skill-kiri-continer .card-skill h1{
+main .home-skill .desc-skill-kiri-continer .card-skill:nth-child(3) {
+    animation: masukKiriSkill ease forwards;
+    animation-timeline: view();
+}
+
+main .home-skill .desc-skill-kiri-continer .card-skill h1 {
     color: var(--primaryColor);
 }
 
-main .home-skill .desc-skill-kiri-continer .card-skill li{
+main .home-skill .desc-skill-kiri-continer .card-skill li {
     color: var(--textColor);
 }
 
-main .home-skill .desc-skill-kanan{
+main .home-skill .desc-skill-kanan {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -297,38 +295,39 @@ main .home-skill .desc-skill-kanan{
     font-size: .8rem;
 }
 
-main .home-skill .desc-skill-kanan .card-skill{
+main .home-skill .desc-skill-kanan .card-skill {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
     opacity: 0;
 }
 
-main .home-skill .desc-skill-kanan .card-skill:nth-child(1){
+main .home-skill .desc-skill-kanan .card-skill:nth-child(1) {
     animation: masukKananSkill ease forwards;
-    animation-timeline: view() ;
-}
-main .home-skill .desc-skill-kanan .card-skill:nth-child(2){
-    animation: masukKananSkill ease forwards;
-    animation-timeline: view() ;
+    animation-timeline: view();
 }
 
-main .home-skill .desc-skill-kanan .card-skill:nth-child(3){
+main .home-skill .desc-skill-kanan .card-skill:nth-child(2) {
     animation: masukKananSkill ease forwards;
-    animation-timeline: view() ;
+    animation-timeline: view();
 }
 
-main .home-skill .desc-skill-kanan .card-skill h1{
+main .home-skill .desc-skill-kanan .card-skill:nth-child(3) {
+    animation: masukKananSkill ease forwards;
+    animation-timeline: view();
+}
+
+main .home-skill .desc-skill-kanan .card-skill h1 {
     color: var(--primaryColor);
 }
 
-main .home-skill .desc-skill-kanan .card-skill li{
+main .home-skill .desc-skill-kanan .card-skill li {
     color: var(--textColor);
     text-decoration-color: var(--hover);
 }
 
 
-main .home .home-skill .container-skill{
+main .home .home-skill .container-skill {
     display: flex;
     gap: 20px;
     border: 2px solid var(--hover);
@@ -341,7 +340,7 @@ main .home .home-skill .container-skill{
     animation: muter 8s linear infinite;
 }
 
-main .home .home-skill .container-skill i{
+main .home .home-skill .container-skill i {
     color: var(--background);
     background-color: var(--primaryColor);
     padding: 8px 10px;
@@ -350,27 +349,27 @@ main .home .home-skill .container-skill i{
     position: absolute;
 }
 
-main .home .home-skill .container-skill i:nth-child(1){
+main .home .home-skill .container-skill i:nth-child(1) {
     transform: rotate(0deg) translate(250px) rotate(0deg);
 }
 
-main .home .home-skill .container-skill i:nth-child(2){
+main .home .home-skill .container-skill i:nth-child(2) {
     transform: rotate(72deg) translate(250px) rotate(-72deg);
 }
 
-main .home .home-skill .container-skill i:nth-child(3){
+main .home .home-skill .container-skill i:nth-child(3) {
     transform: rotate(144deg) translate(250px) rotate(-144deg);
 }
 
-main .home .home-skill .container-skill i:nth-child(4){
+main .home .home-skill .container-skill i:nth-child(4) {
     transform: rotate(216deg) translate(250px) rotate(-216deg);
 }
 
-main .home .home-skill .container-skill i:nth-child(5){
-    transform: rotate(288deg) translate(250px) rotate(-288deg); 
+main .home .home-skill .container-skill i:nth-child(5) {
+    transform: rotate(288deg) translate(250px) rotate(-288deg);
 }
 
-main .home .project{
+main .home .project {
     height: 100vh;
     width: 100%;
     box-sizing: border-box;
@@ -383,7 +382,7 @@ main .home .project{
     margin-top: 2%;
 }
 
-main .home .project h1{
+main .home .project h1 {
     color: var(--textColor);
     font-size: 2rem;
     font-weight: 600;
@@ -391,7 +390,7 @@ main .home .project h1{
     padding-bottom: 1.2rem;
 }
 
-main .home .project .container-project{
+main .home .project .container-project {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -401,9 +400,9 @@ main .home .project .container-project{
     box-sizing: border-box;
 }
 
-main .home .project .container-project .card-project{
+main .home .project .container-project .card-project {
     display: flex;
-    box-shadow: 0px 5px 15px rgba(0,0,0,.8);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .8);
     position: relative;
     border-radius: 15px;
     box-sizing: border-box;
@@ -412,34 +411,36 @@ main .home .project .container-project .card-project{
     border: 1px solid var(--primaryColor);
     filter: brightness(95%);
     opacity: 0;
-}  
+}
 
-main .home .project .container-project .card-project.active{
+main .home .project .container-project .card-project.active {
     animation: keAtas .5s ease forwards;
 }
 
-main .home .project .container-project .card-project.active:nth-child(2){
-    animation-delay: .1s ;
+main .home .project .container-project .card-project.active:nth-child(2) {
+    animation-delay: .1s;
 }
-main .home .project .container-project .card-project.active:nth-child(3){
-    animation-delay: .2s ;
+
+main .home .project .container-project .card-project.active:nth-child(3) {
+    animation-delay: .2s;
 }
-main .home .project .container-project .card-project.active:nth-child(4){
-    animation-delay: .3s ;
+
+main .home .project .container-project .card-project.active:nth-child(4) {
+    animation-delay: .3s;
 
 }
 
-main .home .project .container-project .card-project.active:hover{
+main .home .project .container-project .card-project.active:hover {
     border: 1px solid var(--hover);
     box-shadow: 0px 3px 15px var(--hover);
     transform: scale(1.04);
 }
 
-main .home .project .container-project .card-project:hover img{
+main .home .project .container-project .card-project:hover img {
     transform: scale(1.07);
 }
 
-main .home .project .container-project .card-project .informasi{
+main .home .project .container-project .card-project .informasi {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -455,18 +456,18 @@ main .home .project .container-project .card-project .informasi{
     transition: .5s;
 }
 
-main .home .project .container-project .card-project .informasi h3{
+main .home .project .container-project .card-project .informasi h3 {
     color: var(--primaryColor);
     font-size: 1.8rem;
 }
 
-main .home .project .container-project .card-project .informasi p{
+main .home .project .container-project .card-project .informasi p {
     color: var(--textColor);
     width: 300px;
     text-align: center;
 }
 
-main .home .project .container-project .card-project .informasi .btn{
+main .home .project .container-project .card-project .informasi .btn {
     background-color: var(--primaryColor);
     color: var(--textColor);
     padding: 8px 10px;
@@ -478,33 +479,33 @@ main .home .project .container-project .card-project .informasi .btn{
 }
 
 
-main .home .project .container-project .card-project .informasi .btn:hover{
+main .home .project .container-project .card-project .informasi .btn:hover {
     background-color: var(--hover);
     transform: scale(1.05);
-    box-shadow: 0px 2px 5px rgba(0,0,0,.3);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
 }
 
-main .home .project .container-project .card-project .informasi .btn a{
+main .home .project .container-project .card-project .informasi .btn a {
     color: var(--textColor);
     transition: .5s;
 }
 
-main .home .project .container-project .card-project .informasi .btn:hover a{
+main .home .project .container-project .card-project .informasi .btn:hover a {
     margin-right: 8px;
 }
 
-main .home .project .container-project .card-project .informasi .btn i{
+main .home .project .container-project .card-project .informasi .btn i {
     display: none;
     transform: translateX(-12px);
     transition: .3s;
 }
 
-main .home .project .container-project .card-project .informasi .btn:hover i{
+main .home .project .container-project .card-project .informasi .btn:hover i {
     display: block;
     transform: translate(0);
 }
 
-main .home .project .container-project .card-project:hover .informasi{
+main .home .project .container-project .card-project:hover .informasi {
     z-index: 2;
     top: 0;
 }
@@ -517,7 +518,7 @@ main .home .project .container-project .card-project img {
     transition: .3s;
 }
 
-main .home .about-me{
+main .home .about-me {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -527,7 +528,7 @@ main .home .about-me{
     align-items: center;
 }
 
-main .home .about-me h1{
+main .home .about-me h1 {
     color: var(--textColor);
     font-size: 2rem;
     font-weight: 600;
@@ -535,14 +536,14 @@ main .home .about-me h1{
     padding-bottom: 1.2rem;
 }
 
-main .home .about-me .container-about{
-    display:flex;
+main .home .about-me .container-about {
+    display: flex;
     justify-content: space-between;
     margin: 0 0%;
     gap: 5rem;
 }
 
-main .home .about-me .container-about .about-card{
+main .home .about-me .container-about .about-card {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -550,7 +551,7 @@ main .home .about-me .container-about .about-card{
     color: var(--textColor);
 }
 
-main .home .about-me .container-about .about-card .box1{
+main .home .about-me .container-about .about-card .box1 {
     background-color: rgba(43, 0, 73, 0.555);
     padding: 20px;
     width: 100%;
@@ -559,43 +560,43 @@ main .home .about-me .container-about .about-card .box1{
     flex-direction: column;
     justify-content: center;
     border-radius: 20px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,.4);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .4);
 }
 
-main .home .box.active{
+main .home .box.active {
     animation: Glowing 1.1s ease;
     transition: .4s;
 }
 
-main .home .about-me .container-about .about-card .box:hover{
+main .home .about-me .container-about .about-card .box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 5px var(--hover);
 }
 
-main .home .about-me .container-about .about-card .box1 h2{
+main .home .about-me .container-about .about-card .box1 h2 {
     margin-bottom: 1.5rem;
     font-size: 2rem;
 }
 
-main .home .about-me .container-about .about-card .box1 span{
+main .home .about-me .container-about .about-card .box1 span {
     color: var(--primaryColor);
 }
 
-main .home .about-me .container-about .about-card .box1 h4{
+main .home .about-me .container-about .about-card .box1 h4 {
     margin-bottom: 5px;
     color: var(--primaryColor);
     font-size: 1.2rem;
 }
 
-main .home .about-me .container-about .about-card .box1 p{ 
+main .home .about-me .container-about .about-card .box1 p {
     width: 600px;
 }
 
-main .home .about-me .container-about .about-card .box1 h4 span{
+main .home .about-me .container-about .about-card .box1 h4 span {
     color: var(--textColor);
 }
 
-main .home .about-me .container-about .about-card .box2{
+main .home .about-me .container-about .about-card .box2 {
     background-color: rgba(43, 0, 73, 0.555);
     padding: 5px;
     width: 100%;
@@ -606,19 +607,19 @@ main .home .about-me .container-about .about-card .box2{
     justify-content: center;
     padding: 20px;
     gap: 1rem;
-    box-shadow: 0px 5px 15px rgba(0,0,0,.4);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .4);
 }
 
-main .home .about-me .container-about .about-card .box2 h2{
+main .home .about-me .container-about .about-card .box2 h2 {
     color: var(--primaryColor);
     font-size: 2rem;
 }
 
-main .home .about-me .container-about .about-card .box2 ul{
+main .home .about-me .container-about .about-card .box2 ul {
     padding-left: 15px;
 }
 
-main .home .about-me .container-about .about-card:nth-child(2){
+main .home .about-me .container-about .about-card:nth-child(2) {
     background-color: rgba(43, 0, 73, 0.555);
     border-radius: 20px;
     padding: 28px;
@@ -626,124 +627,126 @@ main .home .about-me .container-about .about-card:nth-child(2){
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    box-shadow: 0px 5px 15px rgba(0,0,0,.4);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .4);
     transition: .4s;
+    opacity: 0;
 }
 
-main .home .about-me .container-about .about-card:nth-child(2).active{
-    animation: opacity 2s ease;
+main .home .about-me .container-about .about-card:nth-child(2).active {
+    animation: Glowing 1s ease forwards .11s;
 }
 
-main .home .about-me .container-about .about-card:nth-child(2):hover{
+main .home .about-me .container-about .about-card:nth-child(2):hover {
     transform: scale(1.03);
     box-shadow: 0 0 5px var(--hover);
 }
 
-main .home .about-me .container-about .about-card:nth-child(2)  h2{
+main .home .about-me .container-about .about-card:nth-child(2) h2 {
     color: var(--primaryColor);
     font-size: 2rem;
 }
 
-main .home .about-me .container-about .about-card:nth-child(2) .text-motivation{
+main .home .about-me .container-about .about-card:nth-child(2) .text-motivation {
     display: flex;
     flex-direction: column;
 }
 
-main .home .about-me .container-about .about-card:nth-child(2) .text-motivation i{
+main .home .about-me .container-about .about-card:nth-child(2) .text-motivation i {
     font-size: 4.4rem;
     color: var(--primaryColor);
 }
 
-main .home .about-me .container-about .about-card:nth-child(2) .text-motivation p{
+main .home .about-me .container-about .about-card:nth-child(2) .text-motivation p {
     margin-bottom: 1.5rem;
 }
 
-main .home .about-me .container-about .about-card:nth-child(2) .text-motivation h4{
+main .home .about-me .container-about .about-card:nth-child(2) .text-motivation h4 {
     color: var(--primaryColor);
     padding-left: 2%;
 }
 
 
 
-main .home .about-me .container-about .about-card:nth-child(2) .text-motivation p{
+main .home .about-me .container-about .about-card:nth-child(2) .text-motivation p {
     color: #a1a1a1;
     font-size: 1.5rem;
-    padding:  0 2%;
+    padding: 0 2%;
 }
 
-main .home .about-me .container-about .about-card:nth-child(2) .text-motivation h6{
+main .home .about-me .container-about .about-card:nth-child(2) .text-motivation h6 {
     color: #a1a1a1;
     padding-left: 2%;
 }
 
-main .home .about-me .container-about .about-card:nth-child(2) .btn{
+main .home .about-me .container-about .about-card:nth-child(2) .btn {
     background-color: var(--primaryColor);
     padding: 8px 5px;
-    border-radius: 15px ;
+    border-radius: 15px;
     font-weight: 600;
-    box-shadow: 0 5px 15px rgba(0,0,0,.4);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .4);
     text-align: center;
     width: 150px;
     display: flex;
     justify-content: center;
     transition: .5s;
-    
+
 }
 
-main .home .about-me .container-about .about-card:nth-child(2) .btn:hover{
+main .home .about-me .container-about .about-card:nth-child(2) .btn:hover {
     transition: .3s;
     gap: .5rem;
     transform: scale(1.04);
 }
 
-main .home .about-me .container-about .about-card:nth-child(2) .btn a{
+main .home .about-me .container-about .about-card:nth-child(2) .btn a {
     color: var(--textColor);
 }
 
-main .home .about-me .container-about .about-card:nth-child(2) .btn i{
+main .home .about-me .container-about .about-card:nth-child(2) .btn i {
     display: none;
     align-items: center;
     transform: translateX(-15px);
     transition: 1s;
 }
 
-main .home .about-me .container-about .about-card:nth-child(2) .btn:hover i{
+main .home .about-me .container-about .about-card:nth-child(2) .btn:hover i {
     display: flex;
     transform: translateX(0);
 }
 
-main .home .contact-me{
+main .home .contact-me {
     display: flex;
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
     height: 90vh;
     padding: 18px;
+    padding: 0 5%;
     gap: 5rem;
 }
 
-main .home .contact-me .kata-pengantar{
+main .home .contact-me .kata-pengantar {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 400px;
 }
 
-main .home .contact-me .kata-pengantar h1{
+main .home .contact-me .kata-pengantar h1 {
     color: var(--textColor);
     font-size: 2.4rem;
 }
 
-main .home .contact-me .kata-pengantar p{
-    color: #a1a1a1;
+main .home .contact-me .kata-pengantar p {
+    color: var(--textColor);
 }
 
-main .home .contact-me .kata-pengantar .link-email{
+main .home .contact-me .kata-pengantar .link-email {
     position: relative;
     top: 18vh;
 }
 
-main .home .contact-me .kata-pengantar .link-email a{
+main .home .contact-me .kata-pengantar .link-email a {
     color: var(--primaryColor);
     font-weight: 600;
     margin-right: .5rem;
@@ -751,15 +754,65 @@ main .home .contact-me .kata-pengantar .link-email a{
     transition: .3s;
 }
 
-main .home .contact-me .kata-pengantar .link-email i{
+main .home .contact-me .kata-pengantar .link-email i {
     color: var(--primaryColor);
     font-weight: 600;
     font-size: 1rem;
 }
 
-main .home .contact-me .kata-pengantar .link-email a:hover{
+main .home .contact-me .kata-pengantar .link-email a:hover {
     text-decoration: underline;
-    margin-right:1rem;
+    margin-right: 1rem;
+}
+
+main .home .contact-me .bagian-form {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+    right: 70px;
+}
+
+main .home .contact-me .bagian-form h1 {
+    color: var(--textColor);
+    font-size: 2.4rem;
+}
+
+main .home .contact-me .bagian-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+main .home .contact-me .bagian-form form label {
+    color: #c5c5c5;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+main .home .contact-me .bagian-form form input {
+    padding: 15px;
+    width: 100%;
+    font-size: 1.1rem;
+    border: none;
+    border-bottom: 1px solid var(--primaryColor);
+    outline: none;
+    background: none;
+    color: var(--primaryColor);
+}
+
+main .home .contact-me .bagian-form form textarea {
+    height: 12vh;
+    margin-top: 12px;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    color: white;
+    background-color: rgba(33, 2, 56, 0.555);
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
 }
 
 
@@ -775,59 +828,64 @@ main .home .contact-me .kata-pengantar .link-email a:hover{
 
 
 /* animation */
-@keyframes opacity{
-    0%{
+@keyframes opacity {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
 @keyframes masukKanan {
-    0%{
+    0% {
         transform: translateX(8rem);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
 
 @keyframes masukKiri {
-    0%{
+    0% {
         transform: translateX(-8rem);
         opacity: 0;
     }
-    100%{
+
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
 
 @keyframes tombol {
-    0%{
+    0% {
         transform: scale(1);
         opacity: 0;
     }
-    70%{
+
+    70% {
         transform: scale(1.2);
         opacity: 1;
     }
-    100%{
+
+    100% {
         transform: scale(1);
         opacity: 1;
     }
 }
 
 @keyframes kebawah {
-    0%{
+    0% {
         transform: translateY(-80vh) scale(1);
     }
 
-    20%{
-        transform:  translateY(-40vh) scale(1);
+    20% {
+        transform: translateY(-40vh) scale(1);
     }
 
     /* 50%{
@@ -842,51 +900,60 @@ main .home .contact-me .kata-pengantar .link-email a:hover{
     } */
 
 
-    100%{
+    100% {
         transform: translateY(100vh) scale(.5);
-        opacity : 1;
+        opacity: 1;
     }
 }
 
 @keyframes muter {
-    from{
+    from {
         transform: rotate(0deg);
     }
-    to{
+
+    to {
         transform: rotate(360deg);
     }
 }
 
 @keyframes masukKiriSkill {
-    0%{
+    0% {
         transform: translateX(-8rem);
         opacity: 0;
     }
-    30%,100%{
+
+    30%,
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
 
 @keyframes masukKananSkill {
-    0%{
+    0% {
         transform: translateX(8rem);
         opacity: 0;
     }
-    30%,100%{
+
+    30%,
+    100% {
         transform: translateX(0);
         opacity: 1;
     }
 }
 
 @keyframes keAtas {
-    0%{
+    0% {
         transform: scale(.8);
         opacity: 0;
     }
 
-    100%{
-        transform:scale(1);
+    70% {
+        transform: scale(1.06);
+    }
+
+    100% {
+        transform: scale(1);
         opacity: 1;
     }
 
@@ -894,19 +961,19 @@ main .home .contact-me .kata-pengantar .link-email a:hover{
 
 
 @keyframes Glowing {
-    0%{
+    0% {
         transform: scale(.9);
         opacity: 0;
     }
 
-    50%{
+    50% {
         transform: scale(1.06);
         opacity: 1;
     }
-    
-    100%{
+
+    100% {
         transform: scale(1);
         opacity: 1;
     }
-    
+
 }
