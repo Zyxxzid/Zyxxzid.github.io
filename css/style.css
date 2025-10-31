@@ -17,9 +17,11 @@
 }
 
 body {
-    background-color: var(--background);
+    background: linear-gradient(to top, #2a0344, #0D0B1E, #0D0B1E);
     font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
     box-sizing: border-box;
+    overflow-x: none;
 }
 
 nav {
@@ -97,9 +99,10 @@ main .home {
 
 main .home .home-contant {
     display: flex;
-    justify-content: space-between;
-    gap: 5rem;
+    justify-content: space-between center;
     width: 100%;
+    box-sizing: border-box;
+    padding: 0;
     height: 100vh;
 }
 
@@ -107,11 +110,11 @@ main .home .kata-perkenalan {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 16rem;
+    gap: 30vh;
     margin-top: 50px;
     width: 20%;
     position: relative;
-    top: 5vh;
+    top: 8vh;
 
 }
 
@@ -145,16 +148,19 @@ main .home .kata-perkenalan p {
 
 main .home .foto-profil {
     margin: 0 auto;
-    width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main .home .foto-profil img {
     aspect-ratio: 1/1;
-    width: 700px;
+    width: 70%;
     object-position: top;
     object-fit: cover;
     position: relative;
-    margin: 0 auto;    
+    right: 2vw;
     z-index: 99;
     filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, .8));
     animation: kebawah linear both;
@@ -165,8 +171,11 @@ main .home .foto-profil img {
 
 main .home .foto-profil::before {
     content: '';
-    width: 500px;
-    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 70%;
     border-radius: 100%;
     background-color: var(--hover);
     padding: 5px;
@@ -176,7 +185,7 @@ main .home .foto-profil::before {
     transform: translate(-50%, -50%);
     z-index: -1;
     animation: opacity 4s ease;
-    z-index: 9;
+
 }
 
 main .home .kata-perkenalan .bagian-bawah .links {
@@ -186,8 +195,8 @@ main .home .kata-perkenalan .bagian-bawah .links {
 
 main .home .kata-perkenalan .bagian-bawah .links i {
     background-color: var(--primaryColor);
-    padding: 8px;
-    font-size: 1.8rem;
+    padding: 10px;
+    font-size: 2rem;
     border-radius: 100%;
     color: var(--background);
     transition: .4s;
@@ -216,7 +225,7 @@ main .home .kata-perkenalan .bagian-bawah .links i:hover {
 main .home .profesi {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 25%;
     position: relative;
     right: 0;
     top: 50vh;
@@ -248,6 +257,7 @@ main .home-skill {
     justify-content: space-between;
     box-sizing: border-box;
     align-items: center;
+    margin-top: 5vh;
 }
 
 main .home-skill .desc-skill-kiri-continer {
@@ -330,8 +340,8 @@ main .home-skill .desc-skill-kanan .card-skill li {
 
 main .home .home-skill .container-skill {
     display: flex;
-    gap: 20px;
-    border: 2px solid var(--hover);
+        gap: 20px;
+        border: 2px solid var(--hover);
     justify-content: center;
     align-items: center;
     position: relative;
@@ -772,6 +782,7 @@ main .home .contact-me .bagian-form {
     gap: 4rem;
     position: relative;
     right: 70px;
+    width: 800px;
 }
 
 main .home .contact-me .bagian-form h1 {
@@ -993,57 +1004,12 @@ main .home .contact-me .bagian-form form textarea {
 
 /* dekstop */
 @media (min-width: 1200px) {
-  main .home-contant .foto-profil img{
-    position: relative;
-    left: -8px;
-  }
 }
 
 
 /* laptop */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-  
-  main .home .home-contant {
-    flex-direction: row;
-    gap: 3rem;
-  }
-
-  main .home .foto-profil img {
-    width: 500px;
-    position: relative;
-  }
-
-  main .home .foto-profil::before{
-    height: 400px;
-    width: 400px;
-  }
-
-  main .home .kata-perkenalan .nama h1 {
-    font-size: 2.4rem;
-  }
-
-  main .home .kata-perkenalan p{
-    font-size: .7rem;
-  }
-
-  main .home .kata-perkenalan{
-    position: relative;
-    top: 6rem;
-
-  }
-
-  main .home .kata-perkenalan h4{
-    font-size: 1rem;
-  }
-
-  main .home .profesi h1{
-    font-size: 2rem;
-  }
-
-    main .home .profesi p{
-        font-size: .8rem;
-    }
 
 }
 
