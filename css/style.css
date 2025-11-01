@@ -1296,6 +1296,7 @@ main footer .link-sc i:hover{
 
   main .home-skill {
     margin: -2rem 0 2rem 0;
+    gap: 3rem;
   }
 
   main .home .home-skill .container-skill {
