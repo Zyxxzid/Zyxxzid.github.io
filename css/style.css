@@ -1178,31 +1178,32 @@ main footer .link-sc i:hover{
     box-sizing: border-box;
     width: 100%;
     position: relative;
-    overflow: visible;
+    overflow-x: hidden;
   }
 
   nav .navbar-menu {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     position: absolute;
     top: 11vh;
     left: 5%;
     width: 90%;
     background-color: rgba(43, 0, 73, 0.95);
+    padding: 0;
     border-left: 10px solid var(--primaryColor);
-    border-radius: 10px;
-    z-index: 98;
     overflow: hidden;
+    z-index: 98;
+    align-items: center;
+    flex-direction: column;
     max-height: 0;
     opacity: 0;
     pointer-events: none;
-    transition: max-height 0.5s ease, opacity 0.4s ease;
+    transition: max-height 0.6s ease, opacity 0.5s ease;
+    border-radius: 10px;
   }
 
   nav .navbar-menu.active {
-    max-height: 450px;
+    max-height: 400px;
     opacity: 1;
     pointer-events: auto;
     padding: 15px 0;
@@ -1214,38 +1215,44 @@ main footer .link-sc i:hover{
     z-index: 999;
   }
 
-  main .home {
-    padding: 12vh 5% 0 5%;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
-
   main .home .home-contant {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
     gap: 0;
+
     width: 100%;
+    align-items: center;
+  }
+
+  main .home .foto-profil {
+    display: flex;
+    justify-content: center;
   }
 
   main .home .kata-perkenalan {
-    gap: 8rem;
-    text-align: center;
-    align-items: center;
+    gap: 14rem;
     width: 100%;
   }
 
   main .home .kata-perkenalan .bagian-atas {
-    left: 0;
-    top: 0;
+    display: flex;
+    flex-direction: column;
     position: relative;
+    left: 0vw;
+    top: -12vh;
+    width: 100%;
     animation: none;
+    justify-content: center;
+    align-items: center;
   }
 
   main .home .kata-perkenalan .bagian-atas .nama h1 {
-    font-size: clamp(2.5rem, 9vw, 5rem);
+    display: flex;
+    justify-content: center;
+    position: relative;
     text-align: center;
+    font-size: clamp(60px, 17vw, 120px);
     line-height: 1.1;
   }
 
@@ -1253,10 +1260,14 @@ main footer .link-sc i:hover{
     display: none;
   }
 
+  main .home .kata-perkenalan .bagian-bawah {
+    z-index: 900;
+    padding: 0;
+    margin: 0;
+  }
+
   main .home .foto-profil {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   main .home .foto-profil::before {
@@ -1264,31 +1275,26 @@ main footer .link-sc i:hover{
   }
 
   main .home .foto-profil img {
-    width: 75%;
-    max-width: 380px;
-    position: relative;
-    top: 0;
-    right: 0;
-    aspect-ratio: 1/1.2;
+    aspect-ratio: 1/1.5;
     animation: none;
+    position: absolute;
+    top: 20vh;
+    right: 15vw;
+    left: 12vw;
+    width: clamp(300px, 75vw, 550px);
+    max-width: 100%;
   }
 
   main .home .profesi {
-    position: static;
-    text-align: center;
-    margin-top: 3rem;
-    width: 90%;
-  }
-
-  main .home .profesi h1 {
-    font-size: clamp(1.5rem, 6vw, 2rem);
+    position: absolute;
+    top: 68vh;
+    z-index: 9999;
+    left: 8vw;
+    width: clamp(250px, 80vw, 300px);
   }
 
   main .home-skill {
-    margin: 2rem 0;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
+    margin: -2rem 0 2rem 0;
   }
 
   main .home .home-skill .container-skill {
@@ -1296,38 +1302,44 @@ main footer .link-sc i:hover{
   }
 
   main .home .about-me .container-about {
-    flex-direction: column;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
+    width: 100%;
+  }
+
+  main .home .project {
+    margin-top: -20rem;
+    height: auto;
+    min-height: 240vh;
+  }
+
+  main .home .about-me {
+    padding-right: 5%;
+  }
+
+    main .home .about-me .box1 p{
+        box-sizing: border-box;
+        width: 100px;
+    }
+
+  main .home .about-me .about-card:nth-child(2) {
+    width: 100%;
   }
 
   main .home .contact-me {
+    display: flex;
     flex-direction: column;
+    margin: 20rem 0 15rem 0;
+    gap: 15rem;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
-    height: auto;
-    padding: 2rem 5%;
+    padding: 5%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  main .home .contact-me .kata-pengantar,
   main .home .contact-me .bagian-form {
-    width: 100%;
-  }
-
-  main .home .contact-me .bagian-form input,
-  main .home .contact-me .bagian-form textarea {
-    width: 100%;
-  }
-
-  footer {
-    text-align: center;
-    padding: 1rem;
-  }
-
-  footer .link-sc i {
-    font-size: 1.3rem;
-    margin: 0.5rem;
+    padding-left: 5%;
+    width: 90%;
   }
 }
 
