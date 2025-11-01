@@ -1272,6 +1272,7 @@ main footer .link-sc i:hover{
         position: absolute;
         top: 20vh;
         right: 15vw;
+        width: 550px;
     }
 
   main .home .profesi{
@@ -1280,6 +1281,14 @@ main footer .link-sc i:hover{
     z-index: 9999;
     left: 8vw;
     width: 300px;
+  }
+
+  main .home-skill{
+    margin: -2rem 0 2rem 0 ;
+  }
+
+  main .home .home-skill .container-skill{
+    display: none;
   }
 
   main .home .about-me .container-about{
