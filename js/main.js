@@ -33,3 +33,24 @@ window.addEventListener('scroll', function() {
        
     }
 })
+
+
+const body = document.querySelector('body');
+const toggleTheme = document.querySelector('.icons-menu i');
+
+toggleTheme.addEventListener('click', function() {
+  body.classList.toggle('light-mode');
+
+  if (body.classList.contains('light-mode')) {
+    toggleTheme.classList.replace('fa-sun', 'fa-moon');
+  } else {
+    toggleTheme.classList.replace('fa-moon', 'fa-sun');
+  }
+});
+
+const menuDown = document.querySelector('.icons-menu #menu');
+const navbarMenu = document.querySelector('nav .navbar-menu');
+menuDown.addEventListener('click', function () {
+  navbarMenu.classList.toggle('active');
+});
+
