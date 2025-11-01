@@ -1177,30 +1177,32 @@ main footer .link-sc i:hover{
   nav {
     box-sizing: border-box;
     width: 100%;
+    position: relative;
+    overflow: visible;
   }
-
 
   nav .navbar-menu {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: absolute;
     top: 11vh;
-    left: 12px;
+    left: 5%;
     width: 90%;
     background-color: rgba(43, 0, 73, 0.95);
-    padding: 0;
     border-left: 10px solid var(--primaryColor);
-    overflow: hidden;
+    border-radius: 10px;
     z-index: 98;
-    align-items: center;
+    overflow: hidden;
     max-height: 0;
     opacity: 0;
     pointer-events: none;
-    transition: max-height 0.6s ease, opacity 0.5s ease;
+    transition: max-height 0.5s ease, opacity 0.4s ease;
   }
 
   nav .navbar-menu.active {
-    max-height: 400px;
+    max-height: 450px;
     opacity: 1;
     pointer-events: auto;
     padding: 15px 0;
@@ -1212,87 +1214,121 @@ main footer .link-sc i:hover{
     z-index: 999;
   }
 
-  main .home .home-contant{
+  main .home {
+    padding: 12vh 5% 0 5%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  main .home .home-contant {
     display: flex;
     flex-direction: column;
-    justify-content: none;
+    align-items: center;
+    justify-content: flex-start;
     gap: 0;
+    width: 100%;
   }
 
-  main .home .foto-profil{
-    display: flex;
-    justify-content: center;
-  }
-
-  main .home .kata-perkenalan{
-    gap: 14rem;
+  main .home .kata-perkenalan {
+    gap: 8rem;
+    text-align: center;
+    align-items: center;
+    width: 100%;
   }
 
   main .home .kata-perkenalan .bagian-atas {
-    display: flex;
-    flex-direction: column;
+    left: 0;
+    top: 0;
     position: relative;
-    left: 32vw;
-    top: -12vh;
-    width: 100%;
     animation: none;
+  }
+
+  main .home .kata-perkenalan .bagian-atas .nama h1 {
+    font-size: clamp(2.5rem, 9vw, 5rem);
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  main .home .kata-perkenalan .bagian-atas .moto-hidup {
+    display: none;
+  }
+
+  main .home .foto-profil {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  main .home .kata-perkenalan .bagian-atas .nama h1{
-    display: flex;
-    justify-content: center;
+  main .home .foto-profil::before {
+    display: none;
+  }
+
+  main .home .foto-profil img {
+    width: 75%;
+    max-width: 380px;
     position: relative;
+    top: 0;
+    right: 0;
+    aspect-ratio: 1/1.2;
+    animation: none;
+  }
+
+  main .home .profesi {
+    position: static;
     text-align: center;
-    font-size: 8rem;
+    margin-top: 3rem;
+    width: 90%;
   }
 
-  main .home .kata-perkenalan .bagian-atas .moto-hidup{
+  main .home .profesi h1 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  main .home-skill {
+    margin: 2rem 0;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  main .home .home-skill .container-skill {
     display: none;
   }
 
-  main .home .kata-perkenalan .bagian-bawah{
-    z-index: 900;
-    padding: 0;
-    margin: 0;
-  }
-
-  main .home .foto-profil{
-    display: flex;
-}
-
-  main .home .foto-profil::before{
-        display: none;
-    }
-
-  main .home .foto-profil img{
-        aspect-ratio: 1/1.5;
-        animation: none;
-        position: absolute;
-        top: 20vh;
-        right: 15vw;
-        width: 550px;
-    }
-
-  main .home .profesi{
-    position: absolute;
-    top: 68vh;
-    z-index: 9999;
-    left: 8vw;
-    width: 300px;
-  }
-
-  main .home-skill{
-    margin: -2rem 0 2rem 0 ;
-  }
-
-  main .home .home-skill .container-skill{
-    display: none;
-  }
-
-  main .home .about-me .container-about{
+  main .home .about-me .container-about {
+    flex-direction: column;
     flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  main .home .contact-me {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: auto;
+    padding: 2rem 5%;
+  }
+
+  main .home .contact-me .kata-pengantar,
+  main .home .contact-me .bagian-form {
+    width: 100%;
+  }
+
+  main .home .contact-me .bagian-form input,
+  main .home .contact-me .bagian-form textarea {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  footer .link-sc i {
+    font-size: 1.3rem;
+    margin: 0.5rem;
   }
 }
+
 
