@@ -620,7 +620,8 @@ main .home .about-me .container-about .about-card .box1 h4 {
 }
 
 main .home .about-me .container-about .about-card .box1 p {
-    width: 600px;
+    display: flex;
+    width: 60%;
 }
 
 main .home .about-me .container-about .about-card .box1 h4 span {
@@ -1312,13 +1313,17 @@ main footer .link-sc i:hover{
     min-height: 240vh;
   }
 
+  main .home .project .container-project .card-project{
+    width: 85%;
+  }
+
   main .home .about-me {
     padding-right: 5%;
   }
 
     main .home .about-me .box1 p{
         box-sizing: border-box;
-        width: 100px;
+        width: 100%;
     }
 
   main .home .about-me .about-card:nth-child(2) {
@@ -1339,7 +1344,10 @@ main footer .link-sc i:hover{
 
   main .home .contact-me .bagian-form {
     padding-left: 5%;
-    width: 90%;
+    justify-content: center;
+    position: relative;
+    right: 2%;
+    width: 100%;
   }
 }
 
