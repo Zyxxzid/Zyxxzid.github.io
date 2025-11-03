@@ -128,7 +128,7 @@ main .home .kata-perkenalan {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    gap: 30rem;
+    gap: 30%;
     margin-top: 50px;
     width: 20%;
     position: relative;
@@ -399,6 +399,11 @@ main .home .home-skill .container-skill i:nth-child(4) {
 main .home .home-skill .container-skill i:nth-child(5) {
     transform: rotate(288deg) translate(250px) rotate(-288deg);
 }
+
+main .home .home-skill .container-skill i:nth-child(6) {
+    transform: rotate(300deg) translate(250px) rotate(-300deg);
+}
+
 
 main .home .project {
     height: 100vh;
