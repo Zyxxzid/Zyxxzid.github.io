@@ -10,6 +10,8 @@
     text-decoration: none;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    
 }
 
 *::-webkit-scrollbar {
@@ -27,7 +29,7 @@ body {
 
 
 body.light-mode {
-    background: linear-gradient(to top, #2a0344, #a8a4d8, #b4b0e6);
+    background: linear-gradient(to top, #8906e0, #d6a3ff, #eee);
     color: #0D0B1E;
     background-attachment: fixed;
 
@@ -117,7 +119,7 @@ main .home {
 
 main .home .home-contant {
     display: flex;
-    justify-content: space-between center;
+    justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
     padding: 0;
@@ -275,8 +277,8 @@ main .home-skill {
     justify-content: space-between;
     box-sizing: border-box;
     align-items: center;
-    margin-top: 5vh;
     padding: 0 3%;
+    position: relative;
 }
 
 main .home-skill .desc-skill-kiri-continer {
@@ -323,6 +325,8 @@ main .home-skill .desc-skill-kanan {
     flex-direction: column;
     gap: 2rem;
     width: 300px;
+    position: relative;
+    right: -2%;
     font-size: .8rem;
 }
 
@@ -381,27 +385,22 @@ main .home .home-skill .container-skill i {
 }
 
 main .home .home-skill .container-skill i:nth-child(1) {
-    transform: rotate(0deg) translate(250px) rotate(0deg);
+  transform: rotate(0deg) translate(250px) rotate(0deg);
 }
-
 main .home .home-skill .container-skill i:nth-child(2) {
-    transform: rotate(72deg) translate(250px) rotate(-72deg);
+  transform: rotate(60deg) translate(250px) rotate(-60deg);
 }
-
 main .home .home-skill .container-skill i:nth-child(3) {
-    transform: rotate(144deg) translate(250px) rotate(-144deg);
+  transform: rotate(120deg) translate(250px) rotate(-120deg);
 }
-
 main .home .home-skill .container-skill i:nth-child(4) {
-    transform: rotate(216deg) translate(250px) rotate(-216deg);
+  transform: rotate(180deg) translate(250px) rotate(-180deg);
 }
-
 main .home .home-skill .container-skill i:nth-child(5) {
-    transform: rotate(288deg) translate(250px) rotate(-288deg);
+  transform: rotate(240deg) translate(250px) rotate(-240deg);
 }
-
 main .home .home-skill .container-skill i:nth-child(6) {
-    transform: rotate(300deg) translate(250px) rotate(-300deg);
+  transform: rotate(300deg) translate(250px) rotate(-300deg);
 }
 
 
@@ -415,7 +414,7 @@ main .home .project {
     gap: 5rem;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
+    margin-top: 32%;
 }
 
 main .home .project h1 {
@@ -447,6 +446,7 @@ main .home .project .container-project .card-project {
     border: 1px solid var(--primaryColor);
     filter: brightness(95%);
     opacity: 0;
+    width: 40%;
 }
 
 main .home .project .container-project .card-project.active {
@@ -547,7 +547,7 @@ main .home .project .container-project .card-project:hover .informasi {
 }
 
 main .home .project .container-project .card-project img {
-    width: 600px;
+    width: 100%;
     aspect-ratio: 2/1;
     overflow: hidden;
     box-sizing: border-box;
@@ -1032,7 +1032,7 @@ main footer .link-sc i:hover{
 
 @keyframes keAtas {
     0% {
-        transform: scale(.8);
+        transform: translateY(2rem) scale(.8);
         opacity: 0;
     }
 
@@ -1041,7 +1041,7 @@ main footer .link-sc i:hover{
     }
 
     100% {
-        transform: scale(1);
+        transform: translateY(0) scale(1);
         opacity: 1;
     }
 
@@ -1091,7 +1091,7 @@ main footer .link-sc i:hover{
 
 
 /* LAPTOP  */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
     nav .navbar-menu{
         gap: 1rem;
     }
@@ -1102,10 +1102,6 @@ main footer .link-sc i:hover{
 
     main .home .kata-perkenalan .bagian-atas .nama h1{
         font-size: 3rem;
-    }
-
-    main .home .kata-perkenalan .bagian-bawah .links{
-        
     }
 
     main .home .foto-profil::before{
@@ -1195,7 +1191,7 @@ main footer .link-sc i:hover{
 }
 
 /* HP / MOBILE (<768px) */
-@media (max-width: 767px) {
+@media (min-width : 320px) and (max-width: 480px) {
     body{
         overflow-x: hidden;
     }
@@ -1310,10 +1306,9 @@ main footer .link-sc i:hover{
   }
 
   main .home-skill {
-    margin: -2rem  -2rem 2rem;
+    margin: 15rem 2rem 18rem -2rem;
     gap: 2rem;
     position: relative;
-    left: -7vw;
 
   }
 
@@ -1322,6 +1317,7 @@ main footer .link-sc i:hover{
      padding: 18px;
      border-radius: 12px;
      box-shadow: rgba(0, 0, 0, .4);
+     width: 80%;
    }
 
   main .home .home-skill .card-skill ul li{
