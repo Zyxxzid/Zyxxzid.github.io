@@ -414,7 +414,6 @@ main .home .project {
     gap: 5rem;
     justify-content: center;
     align-items: center;
-    margin-top: 32%;
 }
 
 main .home .project h1 {
@@ -544,6 +543,30 @@ main .home .project .container-project .card-project .informasi .btn:hover i {
 main .home .project .container-project .card-project:hover .informasi {
     z-index: 2;
     top: 0;
+}
+
+main .home .project .container-project .card-project .informasi .tech-web{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15rem;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    gap: 1rem;
+}
+
+main .home .project .container-project .card-project .informasi .tech-web p{
+    background-color: #a1a1a149;
+    color: var(--textColor);
+    width: 100px;
+    padding: 5px;
+    border-radius: 12px;
+    transition: .3s;
+    cursor: default;
+}
+
+main .home .project .container-project .card-project .informasi .tech-web p:hover{
+    background-color: #a1a1a19a;
 }
 
 main .home .project .container-project .card-project img {
@@ -989,7 +1012,7 @@ main footer .link-sc i:hover{
 
 
     100% {
-        transform: translateY(100vh) scale(.5);
+        transform: translateY(95vh) scale(.5);
         opacity: 1;
     }
 }
@@ -1266,6 +1289,7 @@ main footer .link-sc i:hover{
     text-align: center;
     font-size: clamp(60px, 17vw, 120px);
     line-height: 1.1;
+    animation: keAtas 1.5s ease;
   }
 
   main .home .kata-perkenalan .bagian-atas .moto-hidup {
@@ -1358,7 +1382,6 @@ main footer .link-sc i:hover{
 
   main .home .project .container-project .card-project .informasi{
     gap: 1rem;
-    left: -1rem;
   }
 
   main .home .about-me {
