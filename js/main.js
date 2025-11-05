@@ -34,6 +34,24 @@ window.addEventListener('scroll', function() {
     }
 })
 
+window.addEventListener('scroll', function() {
+    const revaeal = document.querySelectorAll('.card .foto-profil')
+    for (let i = 0; i< revaeal.length; i++) {
+        let window1 = window.innerHeight
+        let revealTop = revaeal[i].getBoundingClientRect().top
+        let revealPoint = revaeal[i].offsetHeight;
+        
+        let layar = revealPoint * 0.1
+
+        if (revealTop < window1 - layar) {
+            revaeal[i].classList.add('active')
+        } else {
+            revaeal[i].classList.remove('active')
+        }
+       
+    }
+})
+
 
 const body = document.querySelector('body');
 const toggleTheme = document.querySelector('.icons-menu i');
@@ -53,4 +71,16 @@ const navbarMenu = document.querySelector('nav .navbar-menu');
 menuDown.addEventListener('click', function () {
   navbarMenu.classList.toggle('active');
 });
+
+
+
+const sections = document.querySelectorAll('main section')
+const menuNavbar = document.querySelectorAll('.navbar-menu a')
+
+menuNavbar.forEach((menu, click) => {
+  menu.addEventListener('click', function() {
+    sections.forEach(sec => sec.classList.remove('nyala'))
+    sections[click].classList.toggle('nyala')
+  })
+})
 
