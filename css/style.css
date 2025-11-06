@@ -29,10 +29,18 @@ body {
 
 
 body.light-mode {
-    background: linear-gradient(to top, #8906e0, #d6a3ff, #eee);
+    background: linear-gradient( 25deg, #23003a, #43007a, #eee);
     color: #0D0B1E;
     background-attachment: fixed;
 
+}
+
+body.light-mode i{
+    color: var(--textColor);
+}
+
+body.light-mode main .home .home-skill .container-skill i{
+    color: var(--textColor);
 }
 
 nav {
@@ -324,7 +332,7 @@ main .home-skill .desc-skill-kiri-continer .card-skill h1 {
 
 main .home-skill .desc-skill-kiri-continer .card-skill li {
     color: var(--textColor);    
-    font-size: 10px;
+    font-size: 13px;
 }
 
 main .home-skill .desc-skill-kanan {
@@ -365,7 +373,7 @@ main .home-skill .desc-skill-kanan .card-skill h1 {
 
 main .home-skill .desc-skill-kanan .card-skill li {
     color: var(--textColor);
-    font-size: 10px;
+    font-size: 13px;
 }
 
 
@@ -970,7 +978,6 @@ main footer .link-sc i:hover{
 
 /* page skill */
 .skill-page{
-    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -1000,6 +1007,25 @@ main footer .link-sc i:hover{
     animation: Glowing .9s ease;
 }
 
+.skill-page .card .judul-skill .name-skill{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.skill-page .card .judul-skill .name-skill i{
+    color: var(--primaryColor);
+    font-size: 8rem;
+}
+
+.skill-page .card .judul-skill{
+    opacity: 0;
+}
+
+.skill-page .card .judul-skill.active{
+    animation: opacity ease-in .5s forwards;
+}
+
 .skill-page .primary-skill .judul-page span{
     color: var(--primaryColor);
     opacity: 0;
@@ -1017,6 +1043,8 @@ main footer .link-sc i:hover{
 .skill-page .primary-skill .judul-page .scroll{
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    animation: opacity 2s ease 1.8s forwards;
 }
 
 .skill-page .primary-skill .judul-page .scroll p{
@@ -1032,8 +1060,11 @@ main footer .link-sc i:hover{
     animation: naikTurun 1.5s linear infinite;
 }
 
+.skill-page .card .foto-profil{
+    opacity: 0;
+}
+
 .skill-page .card .foto-profil.active {
-  opacity: 0;
   animation: keAtas 1s ease forwards;
 }
 
@@ -1053,7 +1084,7 @@ main footer .link-sc i:hover{
 }
 
 .skill-page .skill-1 .judul-skill h1{
-    font-size: 8rem;
+    font-size: 6rem;
     color: var(--primaryColor);
     text-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
 }
@@ -1133,7 +1164,7 @@ main footer .link-sc i:hover{
 }
 
 .skill-page .skill-2 .judul-skill h1{
-    font-size: 8rem;
+    font-size: 6rem;
     color: var(--primaryColor);
     text-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
 }
@@ -1176,7 +1207,7 @@ main footer .link-sc i:hover{
 }
 
 .skill-page .skill-3 .judul-skill h1{
-    font-size: 8rem;
+    font-size: 6rem;
     color: var(--primaryColor);
     text-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
 }
@@ -1220,7 +1251,7 @@ main footer .link-sc i:hover{
 }
 
 .skill-page .skill-4 .judul-skill h1{
-    font-size: 8rem;
+    font-size: 6rem;
     color: var(--primaryColor);
     text-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
 }
@@ -1263,7 +1294,7 @@ main footer .link-sc i:hover{
 }
 
 .skill-page .skill-5 .judul-skill h1{
-    font-size: 8rem;
+    font-size: 6rem;
     color: var(--primaryColor);
     text-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
 }
@@ -1307,7 +1338,7 @@ main footer .link-sc i:hover{
 }
 
 .skill-page .skill-6 .judul-skill h1{
-    font-size: 8rem;
+    font-size: 6rem;
     color: var(--primaryColor);
     text-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
 }
@@ -1889,6 +1920,97 @@ main footer .link-sc i:hover{
     width: 330px;
   }
 
+
+
+
+
+
+  /* page skill */
+  main .skill-page {
+    position: relative;
+  }
+  
+
+  main .skill-page .primary-skill .judul-page h1{
+    font-size: 1.8rem;
+  }
+
+  main .skill-page .primary-skill .judul-page p{
+    width: 300px;
+    font-size: .8rem;
+  }
+
+  main .skill-page .card{
+    flex-direction: column-reverse;
+    margin-bottom: 12vh;
+  }
+
+  main .skill-page .card .judul-skill{
+    z-index: 4;
+    position: relative;
+    top: -15vh;
+  }
+
+  main .skill-page .card .judul-skill .name-skill i{
+    font-size: 3rem;
+  }
+
+  main .skill-page .card .judul-skill .name-skill h1{
+    font-size: 3rem;
+  }
+
+  main .skill-page .card .judul-skill p{
+    font-size: 15px;
+  }
+
+  main .skill-page .card  .foto-profil{
+    width: 400px;
+    height: 400px;
+  }
+
+  main .skill-page .card .foto-profil .batas{
+    width: 400px;
+    height: 400px;
+  }
+
+  main .skill-page .card .foto-profil .batas img{
+    width: 100%;
+    height: 100%
+  } 
+
+  main .skill-page .card .foto-profil::before{
+    height: 0px;
+    background-color: rgba(33, 2, 56, 0.555);
+    width: 96%;
+    z-index: -1;
+    border-bottom-left-radius: 12px ;
+    border-bottom-right-radius: 12px ;
+    transition: 2s;
+  }
+
+  main .skill-page .card .foto-profil.active::before{
+    height: 670px;
+  }
+
+    main .skill-page .card .judul-skill ul{
+        overflow: hidden;
+    }
+
+  main .skill-page .card .judul-skill ul::before{
+    height: 20vh;
+    left: 3.7%;
+    top: 12vh;
+    box-sizing: border-box;
+
+  }
+
+    main .skill-page .skill-6 .judul-skill .name-skill h1{
+        font-size: 2.5rem;
+    }
+
+    main .skill-page .skill-6 .judul-skill ul::before{
+    top: 12vh;
+   }
 }
 
 
